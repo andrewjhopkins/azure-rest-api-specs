@@ -1,0 +1,47 @@
+{
+  "resources": [
+    {
+      "path": "/providers/Microsoft.Telephony/operations",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "operations"
+    },
+    {
+      "path": "/providers/Microsoft.Telephony/locations/{location}/checkNameAvailability",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "locations/checkNameAvailability"
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}/providers/Microsoft.Telephony/telephonyservices",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "telephonyservices"
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Telephony/telephonyservices",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "telephonyservices"
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Telephony/telephonyservices/{resourceName}",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "telephonyservices"
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Telephony/telephonyservices/{resourceName}/listKeys",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "telephonyservices/listKeys"
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Telephony/telephonyservices/{resourceName}/regenerateKey",
+      "apiVersion": "2020-05-01-preview",
+      "providerNamespace": "microsoft.telephony",
+      "name": "telephonyservices/regenerateKey"
+    }
+  ],
+  "operations": {}
+}
