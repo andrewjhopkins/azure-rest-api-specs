@@ -720,12 +720,13 @@
           {
             "in": "query",
             "name": "phoneNumberType",
-            "description": "Filter by numberType, e.g. Geographic, TollFree.",
+            "description": "Filter by numberType, e.g. Geographic, TollFree, Mobile.",
             "required": true,
             "type": "string",
             "enum": [
               "geographic",
-              "tollFree"
+              "tollFree",
+              "mobile"
             ],
             "x-ms-enum": {
               "name": "PhoneNumberType",
@@ -971,6 +972,21 @@
             "name": "accept-language",
             "description": "The locale to display in the localized fields in the response. e.g. 'en-US'",
             "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "phoneNumberType",
+            "description": "Filter by numberType, e.g. Geographic, TollFree, Mobile.",
+            "type": "string",
+            "enum": [
+              "geographic",
+              "tollFree",
+              "mobile"
+            ],
+            "x-ms-enum": {
+              "name": "PhoneNumberType",
+              "modelAsString": true
+            }
           }
         ],
         "responses": {
@@ -1035,11 +1051,12 @@
           {
             "in": "query",
             "name": "phoneNumberType",
-            "description": "Filter by numberType, e.g. Geographic, TollFree.",
+            "description": "Filter by numberType, e.g. Geographic, TollFree, Mobile.",
             "type": "string",
             "enum": [
               "geographic",
-              "tollFree"
+              "tollFree",
+              "mobile"
             ],
             "x-ms-enum": {
               "name": "PhoneNumberType",
@@ -2232,7 +2249,8 @@
           "description": "Represents the number type of the offering.",
           "enum": [
             "geographic",
-            "tollFree"
+            "tollFree",
+            "mobile"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -2346,10 +2364,11 @@
       "type": "object",
       "properties": {
         "phoneNumberType": {
-          "description": "The type of phone numbers to search for, e.g. geographic, or tollFree.",
+          "description": "The type of phone numbers to search for, e.g. geographic, tollFree, mobile.",
           "enum": [
             "geographic",
-            "tollFree"
+            "tollFree",
+            "mobile"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -2411,10 +2430,11 @@
           }
         },
         "phoneNumberType": {
-          "description": "The phone number's type, e.g. geographic, or tollFree.",
+          "description": "The phone number's type, e.g. geographic, tollFree, mobile.",
           "enum": [
             "geographic",
-            "tollFree"
+            "tollFree",
+            "mobile"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -2510,10 +2530,11 @@
           "type": "string"
         },
         "phoneNumberType": {
-          "description": "The phone number's type, e.g. geographic, tollFree.",
+          "description": "The phone number's type, e.g. geographic, tollFree, mobile.",
           "enum": [
             "geographic",
-            "tollFree"
+            "tollFree",
+            "mobile"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -2577,7 +2598,8 @@
           "description": "Represents the number type of the offering.",
           "enum": [
             "geographic",
-            "tollFree"
+            "tollFree",
+            "mobile"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -2694,7 +2716,8 @@
           "description": "Represents the number type of the offering.",
           "enum": [
             "geographic",
-            "tollFree"
+            "tollFree",
+            "mobile"
           ],
           "type": "string",
           "x-ms-enum": {
